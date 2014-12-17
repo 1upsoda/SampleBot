@@ -16,10 +16,12 @@ public class TylerBotController
 	public void start()
 	{
 		int button = Button.ID_ENTER;
-		while (button != Button.ID_ESCAPE)
-		{
-		myBot.drawShape(1,1);
 		button = Button.waitForAnyPress();
+		while (button == Button.ID_ESCAPE)
+		{
+			//myBot.drawShape(3,2);
+			myBot.driveAroundRoom();
+			//button = Button.waitForAnyPress();
 		}
 	}
 	
