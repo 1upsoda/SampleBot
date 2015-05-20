@@ -19,8 +19,9 @@ public class TylerBotController
 		button = Button.waitForAnyPress();
 		while (button == Button.ID_ESCAPE)
 		{
+			myBot.isTouched();
 			//myBot.drawShape(3,2);
-			myBot.driveAroundRoom();
+			//myBot.driveAroundRoom();
 			//button = Button.waitForAnyPress();
 		}
 	}

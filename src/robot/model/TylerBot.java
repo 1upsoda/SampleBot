@@ -62,7 +62,7 @@ public class TylerBot
 		{
 			Motor.A.backward();
 			Motor.B.backward();
-			/*
+			
 			try
 			{
 				Thread.sleep(100);
@@ -71,7 +71,7 @@ public class TylerBot
 			{
 				e.printStackTrace();
 			}
-			*/
+			
 		}
 	}
 	
@@ -105,7 +105,7 @@ public class TylerBot
 
 		if (vertexCount != 0) 
 		{
-			currentAngle = (int) (360 / vertexCount);
+			currentAngle = (int) ((360 / vertexCount) * 1.7);
 		}
 
 		return currentAngle;
